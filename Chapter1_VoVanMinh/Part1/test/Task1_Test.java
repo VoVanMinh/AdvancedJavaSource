@@ -1,13 +1,22 @@
-package Chapter1;
-
+package test;
+/* Test for Linear Equation class
+ * Author: Vo Van Minh
+ * Date 19-08-2016
+ * Version 1
+ */
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class Part1_Test {
+import source.Task1_LinearEquation;
 
-	Part1_LinearEquation linearEquation = new Part1_LinearEquation();
+public class Task1_Test {
 
+	Task1_LinearEquation linearEquation = new Task1_LinearEquation();
+
+	/* 
+	 * Test linear equation function.
+	 */
 	@Test
 	public void test() {
 

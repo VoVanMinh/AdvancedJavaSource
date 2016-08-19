@@ -1,13 +1,12 @@
-package Chapter1;
+package source;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-public class Part1_Main {
+public class Task1_Main {
 
 	public static void main(String[] args) {
-		Part1_LinearEquation linearEquation = new Part1_LinearEquation();
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		float a;
@@ -20,8 +19,7 @@ public class Part1_Main {
 			System.out.println("Enter value b: ");
 			b = input.nextFloat();
 			
-			linearEquation.setA(a);
-			linearEquation.setB(b);
+			Task1_LinearEquation linearEquation = new Task1_LinearEquation(a, b);
 			
 			float root = linearEquation.findRoot();
 			if(root == Float.MAX_VALUE)
