@@ -24,7 +24,11 @@ public class Computer {
 		this.manufacturer = manufacturer;
 		this.quantity = quantity;
 	}
-
+	
+	public Computer(float price, int quantity){
+		this.price = price;
+		this.quantity = quantity;	
+	}
 	public String getModelName() {
 		return modelName;
 	}
@@ -57,7 +61,10 @@ public class Computer {
 		this.quantity = quantity;
 	}
 
-	float calMoney() {
+	/*
+	 * calculate money a computer
+	 */
+	public float calMoney() {
 		return price * quantity;
 	}
 	/*

@@ -97,9 +97,9 @@ public class Human {
 	}
 
 	/*
-	 * check date Input: a date string Output: true/false
+	 * check date. Input: a date string. Output: true/false.
 	 */
-	boolean checkDate(String str) {
+	public boolean checkDate(String str) {
 		String re = "^(0[1-9]|[1-9]|1[0-9]|2[0-9]|3[0-1])/(0[1-9]|[1-9]|1[0-2])/(19[0-9][0-9]|[2-9][0-9][0-9][0-9])$";
 		Pattern p = Pattern.compile(re);
 		Matcher m = p.matcher(str);

@@ -1,5 +1,9 @@
 package task12;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /* Author: Vo Van Minh
  * Date 22-08-2016
  * Version 1
@@ -77,12 +81,33 @@ public class Book {
 	/*
 	 * calculate total price a book
 	 */
-	public double findSumPrice() {
+	public double calSumPrice() {
 		return 0;
 	}
 
 	public String toString() {
 		return "--- Book ID\t: " + bookID + "\n--- Book name\t: " + name + "\n--- Date  \t: " + date + "\n--- Price\t: "
 				+ price + "\n--- Amount\t: " + amount + "\n--- Publisher\t: " + publisher;
+	}
+	/*
+	 * get a Book
+	 */
+	public Book getBook() throws IOException {
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("-----Input information book-----");
+		System.out.print("---Book ID: ");
+		String bookID = input.readLine();
+		System.out.print("\n---Book name: ");
+		String name = input.readLine();
+		System.out.print("\n---Date: ");
+		String date = input.readLine();
+		System.out.print("\n---Publisher: ");
+		String publisher = input.readLine();
+		System.out.print("\n---Price: ");
+		double price = Double.parseDouble(input.readLine());
+		System.out.print("\n---Amount: ");
+		double amount = Double.parseDouble(input.readLine());
+		Book book = new Book(bookID, name, date, price, amount, publisher);
+		return book;
 	}
 }

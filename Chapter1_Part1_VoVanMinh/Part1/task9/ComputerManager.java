@@ -27,7 +27,7 @@ public class ComputerManager {
 	}
 
 	/*
-	 * calculate total money all destop in list
+	 * calculate total money all desktop in list
 	 */
 	float totalMoneyDestop() {
 		float result = 0;

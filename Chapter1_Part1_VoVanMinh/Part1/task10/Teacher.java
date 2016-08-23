@@ -56,6 +56,9 @@ public class Teacher extends Human {
 		return basedSalary;
 	}
 
+	/*
+	 * calculate salary of teacher
+	 */
 	float calSalary() {
 		float result = 0;
 		result = basedSalary * factorSalary + allowance;

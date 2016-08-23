@@ -103,7 +103,8 @@ public class Transaction {
 			System.out.print("\n---Transacion Day: ");
 			dayTr = input.nextLine();
 		}
-		String trType = " ";
+		System.out.print("\nEnter transaction type buy/sell: ");
+		String trType = input.nextLine();
 
 		float rate = 0;
 

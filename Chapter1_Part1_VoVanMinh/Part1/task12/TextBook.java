@@ -1,12 +1,15 @@
 package task12;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /* Author: Vo Van Minh
  * Date 22-08-2016
  * Version 1
  */
 public class TextBook extends Book {
 
-	final static String STATE_NEW = "NEW";
-	final static String STATE_OLD = "OLD";
 	String state;
 
 	public String getState() {
@@ -28,10 +31,10 @@ public class TextBook extends Book {
 	}
 
 	@Override
-	public double findSumPrice() {
-		if (state.equalsIgnoreCase(STATE_NEW))
+	public double calSumPrice() {
+		if (state.equalsIgnoreCase("NEW"))
 			return amount * price;
-		else if (state.equalsIgnoreCase(STATE_OLD))
+		else if (state.equalsIgnoreCase("OLD"))
 			return amount * price * 0.5;
 		else
 			return 0;
@@ -43,4 +46,26 @@ public class TextBook extends Book {
 		return super.toString() + "\n--- State \t: " + state;
 	}
 
+	/*
+	 * get a text book
+	 */
+	public TextBook getTexkBook(Book book) throws NumberFormatException, IOException {
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		String state;
+		System.out.println("-----Input TextBook-----");
+		System.out.print("State for Book: " + "\n\t1) NEW" + "\n\t2) OLD" + "\n---Enter a choosen: ");
+		int select = Integer.parseInt(input.readLine());
+		while (select > 2 || select < 1) {
+			System.out.println("Selecttion is incorrect, please select again");
+			System.out.print("State for Book: " + "\n\t1) NEW" + "\n\t2) OLD" + "\n---Enter a choosen: ");
+			select = Integer.parseInt(input.readLine());
+		}
+		if (select == 1)
+			state = "NEW";
+		else
+			state = "OLD";
+		TextBook textBook = new TextBook(book.bookID, book.name, book.date, book.price, book.amount, book.publisher,
+				state);
+		return textBook;
+	}
 }

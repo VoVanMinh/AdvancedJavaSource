@@ -11,6 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		try {
+			
 			Employee emp = new Employee();
 			emp = getEmp();
 			
@@ -74,7 +75,7 @@ public class Main {
 			bu.rate = rate;
 			Salary sa = new Salary();
 			sa.calSalary(emp);
-			System.out.println("Salary: " +sa.calSalary(emp));
+			System.out.println("-----Salary: " +sa.calSalary(emp));
 			break;
 		case 2:
 			System.out.println("Input nunmer product: ");
@@ -86,7 +87,7 @@ public class Main {
 			p.numProduct = nump;
 			Salary sal = new Salary();
 			sal.calSalary(emp);
-			System.out.println("Salary: " +sal.calSalary(emp));
+			System.out.println("-----Salary: " +sal.calSalary(emp));
 			break;
 		default:
 			break;
