@@ -49,7 +49,7 @@ public class CurrencyTransaction extends Transaction {
 
 	//Calculate total money of a currency transaction.
 	@Override
-	float calMoney() {
+	public float calMoney() {
 		super.rate = this.rate;
 		return super.calMoney();
 	}

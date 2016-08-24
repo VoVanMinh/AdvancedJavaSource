@@ -1,10 +1,11 @@
 package task15;
-/* Author: Vo Van Minh
- * Date 23-08-2016
- * Version 1
- */
-import java.util.Scanner;
 
+import java.util.Scanner;
+/* @NonStringedInstrument class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
+ */
 public class NonStringedInstrument extends Instrument{
 	String using;
 
@@ -31,6 +32,7 @@ public class NonStringedInstrument extends Instrument{
 		this.using = using;
 	}
 
+	//to print information of NonStringedInstrument.
 	@Override
 	void play() {
 		// TODO Auto-generated method stub
@@ -38,9 +40,7 @@ public class NonStringedInstrument extends Instrument{
 		System.out.println(super.toString() + using);
 	}
 	
-	/*
-	 * get a NonStringedInstrument
-	 */
+	//to get a NonStringedInstrument.
 	NonStringedInstrument getNSI(){
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

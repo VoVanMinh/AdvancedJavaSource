@@ -45,7 +45,7 @@ public class GoldTransaction extends Transaction {
 
 	//Calculate total money of a gold transaction.
 	@Override
-	float calMoney() {
+	public float calMoney() {
 		super.rate = this.rate;
 		return super.calMoney();
 	}

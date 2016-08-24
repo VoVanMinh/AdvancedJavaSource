@@ -9,7 +9,7 @@ import task10.Human;
 /*
  * @Test for task10.Human class
  * @Author: Vo Van Minh
- * @Date: 23-08-2016
+ * @Date: 24-08-2016
  * @Version: 1.0
  */
 public class TestT10 {

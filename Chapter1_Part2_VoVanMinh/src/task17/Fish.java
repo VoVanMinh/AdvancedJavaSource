@@ -1,7 +1,8 @@
 package task17;
-/* Author: Vo Van Minh
- * Date: 23-08-2016
- * Version 1
+/* @Fish class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public class Fish extends Animal implements ISwimming, IUnderwater{
 
@@ -14,19 +15,19 @@ public class Fish extends Animal implements ISwimming, IUnderwater{
 		super(name, mainFood);
 		// TODO Auto-generated constructor stub
 	}
-
+	//live underwater
 	@Override
 	public void underwater() {
 		// TODO Auto-generated method stub
 		
 	}
-
+	//can swimming
 	@Override
 	public void swim() {
 		// TODO Auto-generated method stub
 		
 	}
-	
+	//print information of a fish.
 	@Override
 	void printAnimal() {
 		// TODO Auto-generated method stub

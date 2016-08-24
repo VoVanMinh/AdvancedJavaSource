@@ -1,7 +1,8 @@
 package task14;
-/* Author: Vo Van Minh
- * Date 23-08-2016
- * Version 1
+/* @Rectangle class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public class Rectangle extends Shape{
 
@@ -24,11 +25,13 @@ public class Rectangle extends Shape{
 	public void setWidth(double width) {
 		this.width = width;
 	}
+	//to calculate perimeter of rectangle.
 	@Override
 	double perimeter() {
 		// TODO Auto-generated method stub
 		return (length + width) * 2;
 	}
+	//to calculate area of rectangle.
 	@Override
 	double area() {
 		// TODO Auto-generated method stub

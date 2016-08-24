@@ -1,7 +1,8 @@
 package task16;
-/* Author: Vo Van Minh
- * Date: 23-08-2016
- * Version 1
+/* @Car class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public class Car extends Transport implements ISpeed, IFuel{
 	String gearType;
@@ -32,6 +33,7 @@ public class Car extends Transport implements ISpeed, IFuel{
 	public void setCarType(String carType) {
 		this.carType = carType;
 	}
+	//to print information of a car.
 	@Override
 	void printTransport() {
 		System.out.println("------------------------");
@@ -42,12 +44,22 @@ public class Car extends Transport implements ISpeed, IFuel{
 		System.out.println("Gear type: " +gearType);
 		System.out.println("Car type: " +carType);
 	}
+	/*
+	 * to calculate fuel consumption
+	 * Input: 2 float type: distance and number liters.
+	 * Output: return result float type.
+	 */
 	@Override
 	public float calFuelConsumption(float distance, float numLiters) {
 		if(numLiters <= 0)
 			return 0;
 		return distance/numLiters;
 	}
+	/*
+	 * to calculate speed.
+	 * Input: 2 float type: distance and time.
+	 * Output: return result float type.
+	 */
 	@Override
 	public float calSpeed(float distance, float time) {
 		if(time <= 0)

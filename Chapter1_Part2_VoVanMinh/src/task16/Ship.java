@@ -1,7 +1,8 @@
 package task16;
-/* Author: Vo Van Minh
- * Date: 23-08-2016
- * Version 1
+/* @Ship class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public class Ship extends Transport implements ISpeed, IFuel {
 
@@ -87,6 +88,7 @@ public class Ship extends Transport implements ISpeed, IFuel {
 		this.fuelType = fuelType;
 	}
 
+	//to print information of a ship.
 	@Override
 	void printTransport() {
 		System.out.println("------------------------");
@@ -102,6 +104,11 @@ public class Ship extends Transport implements ISpeed, IFuel {
 		System.out.println("Fuel type: " + fuelType);
 	}
 
+	/*
+	 * to calculate fuel consumption
+	 * Input: 2 float type: distance and number liters.
+	 * Output: return result float type.
+	 */
 	@Override
 	public float calFuelConsumption(float distance, float numLiters) {
 		if (numLiters <= 0)
@@ -109,6 +116,11 @@ public class Ship extends Transport implements ISpeed, IFuel {
 		return distance / (numLiters - fuelConsumptionStart);
 	}
 
+	/*
+	 * to calculate speed.
+	 * Input: 2 float type: distance and time.
+	 * Output: return result float type.
+	 */
 	@Override
 	public float calSpeed(float distance, float time) {
 		if (time <= 0)

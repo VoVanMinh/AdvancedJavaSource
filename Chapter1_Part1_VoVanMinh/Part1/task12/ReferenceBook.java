@@ -34,7 +34,12 @@ public class ReferenceBook extends Book {
 			this.tax = 0;
 		this.tax = tax;
 	}
-
+	
+	public ReferenceBook(double price, double amount, double tax){
+		this.price = price;
+		this.amount = amount;
+		this.tax = tax;
+	}
 	//to calculate total money of a reference book.
 	@Override
 	public double calSumPrice() {

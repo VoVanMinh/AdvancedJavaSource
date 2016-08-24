@@ -1,7 +1,12 @@
 package task14;
 
 import java.util.Scanner;
-
+/*
+ * @Main class to execute
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,7 +18,7 @@ public class Main {
 		}
 
 	}
-
+	//to show menu anh return a choosen int type.
 	static int menu() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -29,7 +34,7 @@ public class Main {
 		}
 		return choose;
 	}
-
+	//to deploy program
 	static void calculate() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

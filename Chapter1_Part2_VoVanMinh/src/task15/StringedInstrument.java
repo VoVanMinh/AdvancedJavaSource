@@ -1,11 +1,10 @@
 package task15;
-/* Author: Vo Van Minh
- * Date 23-08-2016
- * Version 1
- */
-
 import java.util.Scanner;
-
+/* @StringedInstrument class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
+ */
 public class StringedInstrument extends Instrument{
 	int numberStr;
 
@@ -32,6 +31,7 @@ public class StringedInstrument extends Instrument{
 		this.numberStr = numberStr;
 	}
 
+	//to print information of StringedInstrument.
 	@Override
 	void play() {
 		// TODO Auto-generated method stub
@@ -39,9 +39,7 @@ public class StringedInstrument extends Instrument{
 		System.out.println(super.toString() + numberStr);
 	}
 
-	/*
-	 * get a StringedInstrument
-	 */
+	//to get a StringedInstrument.
 	StringedInstrument getSI(){
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

@@ -29,7 +29,11 @@ public class Transaction {
 		this.quantity = quantity;
 		this.rate = rate;
 	}
-
+	public Transaction(int quantity, float rate) {
+		super();
+		this.quantity = quantity;
+		this.rate = rate;
+	}
 	public String getId() {
 		return id;
 	}
@@ -71,7 +75,7 @@ public class Transaction {
 	}
 
 	//Calculate total money of a transaction.
-	float calMoney() {
+	public float calMoney() {
 		if (transactionType.equalsIgnoreCase("sell"))
 			return (quantity * rate + (quantity * rate) * 0.001f);
 		return quantity * rate;

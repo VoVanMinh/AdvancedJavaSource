@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/* @Main class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
+ */
 public class Main {
 	public static void main(String[] args) {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -75,6 +79,7 @@ public class Main {
 
 	}
 
+	//to show menu and return a choosen int type.
 	static int menu() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -90,6 +95,7 @@ public class Main {
 		return choose;
 	}
 
+	//to print transport list.
 	static void printList(ArrayList<Transport> listTr){
 		System.out.println("-------------Transport List------------");
 		for (int i = 0; i < listTr.size(); i++) {

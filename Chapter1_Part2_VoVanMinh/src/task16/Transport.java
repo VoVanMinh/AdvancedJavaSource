@@ -1,7 +1,8 @@
 package task16;
-/* Author: Vo Van Minh
- * Date: 23-08-2016
- * Version 1
+/* @Transport class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public abstract class Transport {
 	String id;

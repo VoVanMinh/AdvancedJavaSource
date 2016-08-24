@@ -1,12 +1,14 @@
 package task15;
-/* Author: Vo Van Minh
- * Date 23-08-2016
- * Version 1
+/* @Instrument class
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
  */
 public abstract class Instrument {
 	String name;
 	String manufacture;
 	
+	//play() method to print information.
 	abstract void play();
 
 	public Instrument() {
@@ -35,7 +37,7 @@ public abstract class Instrument {
 	public void setManufacture(String manufacture) {
 		this.manufacture = manufacture;
 	}
-	
+	//to print information of a instrument.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

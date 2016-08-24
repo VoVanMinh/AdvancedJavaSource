@@ -27,12 +27,14 @@ public class Production extends Employee {
 		super(name, factorSalary, numberPeople, allowance);
 		// TODO Auto-generated constructor stub
 	}
-	
+	public Production(int numProduct){
+		this.numProduct = numProduct;
+	}
 	/*
 	 * to calculate remunerate money of production employee.
 	 * Output: return result double type.
 	 */
-	double calRemunerate()
+	public double calRemunerate()
 	{
 		double result = 0;
 		result = (numProduct - BASED) * BONUS;
