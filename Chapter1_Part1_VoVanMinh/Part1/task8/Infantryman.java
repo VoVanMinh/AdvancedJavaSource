@@ -1,13 +1,13 @@
 package task8;
-
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
-
+/* @Infantryman class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Infantryman extends Soldier {
 
+	// to reduce the power went 2
 	@Override
 	void fight() {
 		this.power -= 2;
@@ -24,7 +24,8 @@ public class Infantryman extends Soldier {
 	}
 
 	/*
-	 * get a infantryman
+	 * Get a Infantryman. Input: user input from keyboard. Output: a
+	 * Infantryman.
 	 */
 	Infantryman getInfantryman() {
 		@SuppressWarnings("resource")
@@ -43,6 +44,7 @@ public class Infantryman extends Soldier {
 		return infantryman;
 	}
 
+	//to print information of a Infantryman.
 	@Override
 	void printSoldier() {
 		System.out.println("---------------------------");

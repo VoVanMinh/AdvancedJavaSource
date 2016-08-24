@@ -1,23 +1,20 @@
 package test;
-/* Test for Salary class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import task6.Employee;
 import task6.Salary;
-
+/* @Test for Salary class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class TestT6 {
 
 	Salary salary = new Salary();
 
-	/*
-	 * Test calculate the employee's salary after taxes function.
-	 */
+	//Test calculate the employee's salary after taxes function.
 	@Test
 	public void test() {
 

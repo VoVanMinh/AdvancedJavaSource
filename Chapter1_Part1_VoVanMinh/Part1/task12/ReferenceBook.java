@@ -5,9 +5,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
+/* @Reference Book class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
  */
 public class ReferenceBook extends Book {
 	double tax;
@@ -34,12 +35,14 @@ public class ReferenceBook extends Book {
 		this.tax = tax;
 	}
 
+	//to calculate total money of a reference book.
 	@Override
 	public double calSumPrice() {
 		// TODO Auto-generated method stub
 		return (amount * price) + (amount * price) * tax / 100;
 	}
 
+	//to print a reference book.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
@@ -47,7 +50,9 @@ public class ReferenceBook extends Book {
 	}
 
 	/*
-	 * get a reference book
+	 * Get a reference book.
+	 * Input: a book.
+	 * Output: return a reference book.
 	 */
 	public ReferenceBook getReferenceBook(Book book) throws NumberFormatException, IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));

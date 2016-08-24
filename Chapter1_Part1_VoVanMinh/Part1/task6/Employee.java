@@ -1,8 +1,8 @@
 package task6;
-/* Employee class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @Employee class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
  */
 public class Employee {
 

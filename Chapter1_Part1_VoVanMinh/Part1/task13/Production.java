@@ -1,10 +1,11 @@
 package task13;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import task6.Employee;
-
+/* 
+ * @Production class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Production extends Employee {
 	final static int BASED = 1000;
 	final static double BONUS = 0.05;
@@ -28,7 +29,8 @@ public class Production extends Employee {
 	}
 	
 	/*
-	 * calculate remunerate of production employee
+	 * to calculate remunerate money of production employee.
+	 * Output: return result double type.
 	 */
 	double calRemunerate()
 	{
@@ -38,6 +40,7 @@ public class Production extends Employee {
 			return 0;
 		return result;
 	}
+	//to print information of a production employee.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

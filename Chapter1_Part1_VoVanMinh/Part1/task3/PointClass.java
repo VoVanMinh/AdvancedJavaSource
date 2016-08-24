@@ -1,9 +1,9 @@
 package task3;
 
-/* Point Class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @Point Class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1
  */
 public class PointClass {
 	float x;

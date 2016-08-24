@@ -1,24 +1,23 @@
 package test;
-/* Test for Linear Equation class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import task1.LinearEquation;
 
+/* @Test for Linear Equation class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class TestT1 {
 
 	LinearEquation linearEquation = new LinearEquation();
 
-	/* 
-	 * Test linear equation function.
-	 */
+	//Test linear equation function.
 	@Test
-	public void test() {
+	public void testLE() {
 
 		float a[] = { 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 };
 		float b[] = { 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 };

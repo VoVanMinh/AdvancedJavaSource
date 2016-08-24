@@ -1,9 +1,5 @@
 package test;
-/* Test for Circle class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
+
 import static org.junit.Assert.*;
 
 import java.awt.Point;
@@ -11,17 +7,18 @@ import java.awt.Point;
 import org.junit.Test;
 
 import task4.Circle;
-
+/* @Test for Circle class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class TestT4 {
 
 	Point OPoint = new Point();
 	Point RPoint = new Point();
 	Circle circle = new Circle();
 
-	/*
-	 * Test calculate perimeter of circle function. 
-	 * Input includes: 2 point O and R.
-	 */
+	//Test calculate perimeter of circle function.
 	@Test
 	public void testPerimeter() {
 		float x[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -40,10 +37,7 @@ public class TestT4 {
 		}
 	}
 
-	/*
-	 * Test calculate area of circle function. 
-	 * Input includes: 2 point O and R.
-	 */
+	//Test calculate area of circle function. 
 	@Test
 	public void testArea() {
 		float x[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

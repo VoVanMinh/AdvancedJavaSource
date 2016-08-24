@@ -2,10 +2,10 @@ package task4;
 
 import java.awt.Point;
 
-/* Circle class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @Circle class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
  */
 public class Circle {
 	Point OPoint;
@@ -39,8 +39,8 @@ public class Circle {
 	}
 
 	/*
-	 * Calculate distance. Input: 2 points O and R.
-	 * Output: return float type.
+	 * Calculate radius of circle. Input: 2 points O and R.
+	 * Output: return distance float type.
 	 */
 	public float calDistance(){
 		float result = (float) Point.distance(OPoint.getX(), OPoint.getY(), RPoint.getX(), RPoint.getY());
@@ -48,7 +48,7 @@ public class Circle {
 	}
 	/*
 	 * Calculate perimeter of circle. Input: radius.
-	 *  Output: return float type.
+	 *  Output: return perimeter float type.
 	 */
 	public float calPerimeterCircle() {
 		if(calDistance() == 0)
@@ -59,7 +59,7 @@ public class Circle {
 
 	/*
 	 * Calculate area of circle. Input: radius.
- 	 *	Output: return float type.
+ 	 *	Output: return area float type.
 	 */
 	public float calAreaCircle() {
 		if(calDistance() == 0)

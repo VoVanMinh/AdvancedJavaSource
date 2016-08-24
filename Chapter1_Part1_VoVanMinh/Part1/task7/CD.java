@@ -1,8 +1,8 @@
 package task7;
-/* CD class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @CD class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
  */
 public class CD {
 
@@ -57,7 +57,7 @@ public class CD {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
+	//to print information of a CD.
 	@Override
 	public String toString() {
 		return id +"\t" +name +"\t" +singer +"\t" +numOfSong +"\t\t" +price;

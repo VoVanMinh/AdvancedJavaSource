@@ -1,10 +1,9 @@
 package task10;
+import java.util.Scanner;
 /* Author: Vo Van Minh
  * Date 22-08-2016
  * Version 1
  */
-import java.util.Scanner;
-
 public class Teacher extends Human {
 	final int basedSalary = 1260000;
 	String head;

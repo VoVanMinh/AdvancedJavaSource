@@ -1,10 +1,10 @@
 package task10;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
-
+/* @Student class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Student extends Human {
 
 	String grade;
@@ -53,8 +53,8 @@ public class Student extends Human {
 	}
 
 	/*
-	 * calculate medium score
-	 * Output: return a float type
+	 * Calculate medium score. Input: 2 mark float type. Output: return result
+	 * float type.
 	 */
 	float calMediumScore() {
 		float result = 0;
@@ -62,15 +62,17 @@ public class Student extends Human {
 		return result;
 	}
 
+	//to print information of a student.
 	@Override
 	void printHuman() {
 		// TODO Auto-generated method stub
 		System.out.println("-------Student Information-----");
 		super.printHuman();
-		System.out.println("---Grade: " +this.grade);
+		System.out.println("---Grade: " + this.grade);
 		System.out.println("---Mark 1: " + this.mark1);
 		System.out.println("---Mark 2: " + this.mark2);
 	}
+
 	/*
 	 * get a student
 	 */
@@ -88,7 +90,7 @@ public class Student extends Human {
 		st.grade = grade;
 		st.mark1 = mark1;
 		st.mark2 = mark2;
-		
+
 		return st;
 	}
 }

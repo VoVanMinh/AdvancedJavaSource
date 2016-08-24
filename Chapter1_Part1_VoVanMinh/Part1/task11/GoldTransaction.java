@@ -1,11 +1,11 @@
 package task11;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
 
-
+/* @Gold Transaction
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class GoldTransaction extends Transaction {
 	String goldType;
 
@@ -26,9 +26,7 @@ public class GoldTransaction extends Transaction {
 		this.goldType = goldType;
 	}
 	
-	/*
-	 * get gold rate
-	 */
+	//to get a gold rate.
 	float getRA(){
 		float result = 0;
 		if (goldType.equalsIgnoreCase("10K")) {
@@ -45,12 +43,14 @@ public class GoldTransaction extends Transaction {
 		return result;
 	}
 
+	//Calculate total money of a gold transaction.
 	@Override
 	float calMoney() {
 		super.rate = this.rate;
 		return super.calMoney();
 	}
 
+	//to print a gold transaction.
 	@Override
 	void printTrans() {
 		// TODO Auto-generated method stub
@@ -60,7 +60,9 @@ public class GoldTransaction extends Transaction {
 	}
 
 	/*
-	 * get a gold transaction
+	 * Get a gold transaction.
+	 * Input: a transaction.
+	 * Output: return a gold transaction.
 	 */
 	GoldTransaction getGoldTrans(Transaction tr) {
 		@SuppressWarnings("resource")

@@ -1,22 +1,20 @@
 package test;
-/* Test for calculation class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import task2.Calculation;
-
+/* @Test for calculation class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class TestT2 {
 
 	Calculation cal = new Calculation();
 
-	/*
-	 * Test addition function.
-	 */
+	//Test addition function.
 	@Test
 	public void testAddition() {
 		float firstNumber[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -33,9 +31,7 @@ public class TestT2 {
 		}
 	}
 
-	/*
-	 * Test subtraction function.
-	 */
+	//Test subtraction function.
 	@Test
 	public void testSubtraction() {
 		float firstNumber[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -52,9 +48,7 @@ public class TestT2 {
 		}
 	}
 
-	/*
-	 * Test multiplication function.
-	 */
+	//Test multiplication function.
 	@Test
 	public void testMultiplication() {
 		float firstNumber[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -71,9 +65,7 @@ public class TestT2 {
 		}
 	}
 
-	/*
-	 * Test division function.
-	 */
+	//Test division function.
 	@Test
 	public void testDivision() {
 		float firstNumber[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

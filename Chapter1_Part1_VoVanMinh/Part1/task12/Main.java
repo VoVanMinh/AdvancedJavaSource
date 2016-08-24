@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+ * @Main class to execute program.
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * Version: 1.0
+ */
 public class Main {
 
 	static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -50,6 +56,7 @@ public class Main {
 		}
 	}
 
+	//to show menu of program and return a choosen int type.
 	static int menu() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -64,6 +71,7 @@ public class Main {
 		return choose;
 	}
 
+	//to print a book list.
 	static void printList(ArrayList<Book> listBook) {
 		System.out.println("-----Book List-----");
 		for (int i = 0; i < listBook.size(); i++) {

@@ -1,11 +1,11 @@
 package task13;
-
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import task6.Employee;
-
+/* 
+ * @Business class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Business extends Employee {
 	double salaryBusiness;
 	double rate;
@@ -36,12 +36,14 @@ public class Business extends Employee {
 	}
 
 	/*
-	 * calculate remunerate of business employee. Output: return double type
+	 * to calculate remunerate of business employee. 
+	 * Output: return double type
 	 */
 	double calRemunerate() {
 		return salaryBusiness * rate;
 	}
 
+	//to print information of a business employee.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

@@ -45,9 +45,11 @@ public class Soldier {
 		this.weapon = weapon;
 	}
 
+	//to reduce the power went 1.
 	void fight() {
 		this.power--;
 	}
+	//to print information of a soldier.
 	void printSoldier(){
 		System.out.println("-----Name: " + this.name);
 		System.out.println("-----Power: " + this.power);

@@ -1,10 +1,10 @@
 package task9;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
-
+/* Laptop class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Laptop extends Computer {
 
 	float weight;
@@ -28,6 +28,7 @@ public class Laptop extends Computer {
 		this.screenSize = screenSize;
 	}
 
+	//to print information of a laptop.
 	@Override
 	void printComputer() {
 		System.out.println("-------Laptop Information-----");
@@ -38,7 +39,9 @@ public class Laptop extends Computer {
 	}
 
 	/*
-	 * get a laptop
+	 * Get a laptop.
+	 * Input: a computer.
+	 * Output: a laptop.
 	 */
 	Laptop getLaptop(Computer com) {
 		@SuppressWarnings("resource")

@@ -1,9 +1,12 @@
 package task1;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
+/* @Main Class to execute program.
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class Main {
 
 	public static void main(String[] args) {

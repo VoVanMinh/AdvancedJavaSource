@@ -1,8 +1,9 @@
 package task2;
-/* Calculation class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @Calculation class to calculate addition, subtraction, 
+ * 	multiplication, division of 2 number float type.
+ * @Author: Vo Van Minh
+ * @Date 19-08-2016
+ * @Version: 1.0
  */
 public class Calculation {
 	float firstNumber;
@@ -30,15 +31,35 @@ public class Calculation {
 		this.secondNumber = secondNumber;
 	}
 	
+	/*
+	 * Addition function to calculate sum.
+	 * Input: 2 number float type.
+	 * Output: return sum float type.
+	 */
 	public float calAddition(){
 		return (firstNumber + secondNumber);
 	}
+	/*
+	 * Addition function to calculate subtraction.
+	 * Input: 2 number float type.
+	 * Output: return subtract float type.
+	 */
 	public float calSubtraction(){
 		return (firstNumber - secondNumber);
 	}
+	/*
+	 * Multiplication function to calculate multiplication.
+	 * Input: 2 number float type.
+	 * Output: return multiply float type.
+	 */
 	public float calMultiplication(){
 		return (firstNumber * secondNumber);
 	}
+	/*
+	 * Multiplication function to calculate division.
+	 * Input: 2 number float type.
+	 * Output: return divide float type.
+	 */
 	public float calDivision(){
 		if(secondNumber == 0)
 			return Float.NaN;

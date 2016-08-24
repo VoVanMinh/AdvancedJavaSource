@@ -1,10 +1,10 @@
 package task9;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
-
+/* @Computer class
+ * @Author: Vo Van Minh
+ * @Date 22-08-2016
+ * @Version 1
+ */
 public class Computer {
 
 	String modelName;
@@ -62,14 +62,15 @@ public class Computer {
 	}
 
 	/*
-	 * calculate money a computer
+	 * Calculate money a computer.
+	 * Input: price and quantity.
+	 * Output: return result float type.
 	 */
 	public float calMoney() {
 		return price * quantity;
 	}
-	/*
-	 * print a computer
-	 */
+	
+	 //to print information a computer
 	void printComputer()
 	{
 		System.out.println("---Model name: " +this.modelName);
@@ -78,7 +79,9 @@ public class Computer {
 		System.out.println("---Quantity: " +this.quantity);
 	}
 	/*
-	 * get a computer
+	 * Get a computer.
+	 * Input: user input from keyboard.
+	 * Output: return a computer.
 	 */
 	Computer getComputer(){
 		@SuppressWarnings("resource")

@@ -2,7 +2,11 @@ package task8;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/* @Main Class to execute program.
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -29,6 +33,11 @@ public class Main {
 
 	}
 
+	/*
+	 * Create menu and play game.
+	 * Input: a Infantryman and a Trooper.
+	 * Output: print information when play game.
+	 */
 	private static void startGame(Infantryman infantryman, Trooper trooper) {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

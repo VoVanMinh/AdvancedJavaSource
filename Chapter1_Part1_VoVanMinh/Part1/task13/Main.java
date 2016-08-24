@@ -5,7 +5,12 @@ import java.util.Scanner;
 
 import task6.Employee;
 import task6.Salary;
-
+/*
+ * @Main class to execute program.
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * Version: 1.0
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -25,6 +30,7 @@ public class Main {
 		}
 
 	}
+	//to get a employee from keyboard.
 	static Employee getEmp(){
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -45,6 +51,7 @@ public class Main {
 		return emp;
 	}
 	
+	//to show menu and return a choosen int type.
 	static int menu() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -59,6 +66,7 @@ public class Main {
 		return choose;
 	}
 
+	//to deploy program.
 	static void calculate(Employee emp) {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);

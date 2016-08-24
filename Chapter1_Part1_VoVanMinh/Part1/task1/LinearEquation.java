@@ -1,9 +1,9 @@
 package task1;
 
-/* Linear Equation Class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
+/* @Linear Equation Class to calculate root of linear equation
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
  */
 public class LinearEquation {
 
@@ -38,7 +38,7 @@ public class LinearEquation {
 	}
 
 	/*
-	 * Find root of the linear equation function. Input: 2 float variables a
+	 * Calculate root of the linear equation function. Input: 2 float variables a
 	 * and b. Output: return a root float type.
 	 */
 	public float findRoot() {

@@ -1,21 +1,17 @@
 package test;
-/* Test for CD class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
 import static org.junit.Assert.*;
-
 import org.junit.Test;
-
 import task7.CD;
 import task7.CDManager;
 
+/* @Test for CD class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class TestT7 {
 
-	/*
-	 * Test calculate total money of all CD object in List function.
-	 */
+	//Test calculate total money of all CD object in list function.
 	@Test
 	public void test() {
 

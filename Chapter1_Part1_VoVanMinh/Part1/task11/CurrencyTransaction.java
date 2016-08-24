@@ -1,11 +1,10 @@
 package task11;
-
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
-
+/* @Currency transaction class.
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
 public class CurrencyTransaction extends Transaction {
 
 	final float[] RATE = { 22260, 24457, 16802.30f };
@@ -35,9 +34,7 @@ public class CurrencyTransaction extends Transaction {
 		CurrencyType = currencyType;
 	}
 
-	/*
-	 * get currency rate
-	 */
+	//to get currency rate float type.
 	float getRA() {
 		float result = 0;
 		if (CurrencyType.equalsIgnoreCase("USD")) {
@@ -50,12 +47,14 @@ public class CurrencyTransaction extends Transaction {
 		return result;
 	}
 
+	//Calculate total money of a currency transaction.
 	@Override
 	float calMoney() {
 		super.rate = this.rate;
 		return super.calMoney();
 	}
 
+	//to print a currency transaction.
 	@Override
 	void printTrans() {
 		// TODO Auto-generated method stub
@@ -65,7 +64,9 @@ public class CurrencyTransaction extends Transaction {
 	}
 
 	/*
-	 * get a currency transaction
+	 * Get a currency transaction.
+	 * Input: a transaction.
+	 * Output: return a currency transaction.
 	 */
 	CurrencyTransaction getCurrencyTrans(Transaction tr) {
 		@SuppressWarnings("resource")

@@ -1,10 +1,11 @@
 package task9;
-
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
+/* @Desktop class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
+
 
 public class Destop extends Computer {
 
@@ -27,6 +28,7 @@ public class Destop extends Computer {
 		this.ram = ram;
 	}
 
+	//to print information of a Desktop.
 	@Override
 	void printComputer() {
 		// TODO Auto-generated method stub
@@ -37,7 +39,9 @@ public class Destop extends Computer {
 	}
 
 	/*
-	 * get a desktop
+	 * Get a desktop.
+	 * Input: a Computer.
+	 * Output: return a desktop.
 	 */
 	Destop getDestop(Computer com) {
 		@SuppressWarnings("resource")

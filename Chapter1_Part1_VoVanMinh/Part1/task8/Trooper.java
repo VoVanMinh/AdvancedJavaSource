@@ -1,12 +1,12 @@
 package task8;
+import java.util.Scanner;
 /* Author: Vo Van Minh
  * Date 22-08-2016
  * Version 1
  */
-import java.util.Scanner;
-
 public class Trooper extends Soldier {
 
+	//to reduce the power went 3.
 	@Override
 	void fight() {
 		this.power -= 3;
@@ -23,7 +23,9 @@ public class Trooper extends Soldier {
 	}
 
 	/*
-	 * get a Trooper
+	 * Get a Trooper.
+	 * Input: user input from keyboard.
+	 * Output: a trooper.
 	 */
 	Trooper getTrooper() {
 		@SuppressWarnings("resource")
@@ -41,6 +43,7 @@ public class Trooper extends Soldier {
 		return trooper;
 	}
 
+	//to print a trooper.
 	@Override
 	void printSoldier() {
 		System.out.println("---------------------------");

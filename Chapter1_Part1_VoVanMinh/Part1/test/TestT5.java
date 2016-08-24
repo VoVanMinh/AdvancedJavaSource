@@ -19,10 +19,7 @@ public class TestT5 {
 	Point bPoint = new Point();
 	Rectangle rectangle = new Rectangle();
 
-	/*
-	 * Test calculate perimeter of rectangle function. 
-	 * Input includes: 2 point O and R.
-	 */
+	//Test calculate perimeter of rectangle function.
 	@Test
 	public void testPerimeter() {
 		float x[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -41,10 +38,7 @@ public class TestT5 {
 		}
 	}
 
-	/*
-	 * Test calculate area of rectangle function. 
-	 * Input includes: 2 point O and R.
-	 */
+	//Test calculate area of rectangle function.
 	@Test
 	public void testArea() {
 		float x[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

@@ -1,21 +1,21 @@
 package task7;
-/* CD Manager class
- * Author: Vo Van Minh
- * Date 19-08-2016
- * Version 1
- */
+
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
+/* @CD Manager class
+ * @Author: Vo Van Minh
+ * @Date: 19-08-2016
+ * @Version: 1.0
+ */
 public class CDManager {
 
 	List<CD> arrCD = new ArrayList<CD>();
 
-	/* Add a cd into List.
-	 * Input: a cd object.
+	/* Add a CD into List.
+	 * Input: a CD object.
 	 */
 	public void addCD(CD cd) {
 		arrCD.add(cd);
@@ -23,6 +23,7 @@ public class CDManager {
 
 	/*
 	 * Print a list CD object.
+	 * Input: a list CD.
 	 */
 	public void printArrCD() {
 		System.out.println("------------------------------------------------------");
@@ -36,6 +37,8 @@ public class CDManager {
 
 	/*
 	 * Calculate total money of all CD object in List.
+	 * Input: a list CD.
+	 * Output: return result float type.
 	 */
 	public float calTotalPrice() {
 		float result = 0;
@@ -46,7 +49,8 @@ public class CDManager {
 	}
 
 	/*
-	 * Get a CD object from user input.
+	 * Get a CD object.
+	 * Input: user input from keyboard.
 	 * Output: return a CD object.
 	 */
 	CD getCD() throws IOException {

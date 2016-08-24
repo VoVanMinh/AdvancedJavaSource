@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
+/* @Book class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
  */
 public class Book {
 	String bookID;
@@ -78,19 +79,20 @@ public class Book {
 		this.publisher = publisher;
 	}
 
-	/*
-	 * calculate total price a book
-	 */
+	//to calculate total money a book.
 	public double calSumPrice() {
 		return 0;
 	}
 
+	//to print a book.
 	public String toString() {
 		return "--- Book ID\t: " + bookID + "\n--- Book name\t: " + name + "\n--- Date  \t: " + date + "\n--- Price\t: "
 				+ price + "\n--- Amount\t: " + amount + "\n--- Publisher\t: " + publisher;
 	}
 	/*
-	 * get a Book
+	 * Get a Book.
+	 * Input: user input form keyboard.
+	 * Output: a book.
 	 */
 	public Book getBook() throws IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));

@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
+/* @Text Book class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
  */
 public class TextBook extends Book {
 
@@ -30,6 +31,7 @@ public class TextBook extends Book {
 		this.state = state;
 	}
 
+	//to calculate total money of a text book.
 	@Override
 	public double calSumPrice() {
 		if (state.equalsIgnoreCase("NEW"))
@@ -40,6 +42,7 @@ public class TextBook extends Book {
 			return 0;
 	}
 
+	//to print a text book.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
@@ -47,7 +50,9 @@ public class TextBook extends Book {
 	}
 
 	/*
-	 * get a text book
+	 * Get a text book.
+	 * Input: a book.
+	 * Output: return a text book.
 	 */
 	public TextBook getTexkBook(Book book) throws NumberFormatException, IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));

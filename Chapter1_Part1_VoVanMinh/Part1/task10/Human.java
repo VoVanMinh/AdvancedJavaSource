@@ -1,10 +1,11 @@
 package task10;
-
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
 import java.util.Scanner;
+/* @Human class
+ * @Author: Vo Van Minh
+ * @Date: 22-08-2016
+ * @Version: 1.0
+ */
+
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -60,9 +61,7 @@ public class Human {
 		this.phone = phone;
 	}
 
-	/*
-	 * print a human
-	 */
+	// to print a human.
 	void printHuman() {
 		System.out.println("---Name: " + this.name);
 		System.out.println("---Birthday: " + this.birthday);
@@ -71,7 +70,7 @@ public class Human {
 	}
 
 	/*
-	 * get a human
+	 * Get a human. Input: user input from keyboard. Output: a human.
 	 */
 	Human getHuman() {
 		@SuppressWarnings("resource")
@@ -97,7 +96,7 @@ public class Human {
 	}
 
 	/*
-	 * check date. Input: a date string. Output: true/false.
+	 * to check date. Input: a date string. Output: true/false.
 	 */
 	public boolean checkDate(String str) {
 		String re = "^(0[1-9]|[1-9]|1[0-9]|2[0-9]|3[0-1])/(0[1-9]|[1-9]|1[0-2])/(19[0-9][0-9]|[2-9][0-9][0-9][0-9])$";
@@ -129,7 +128,7 @@ public class Human {
 	}
 
 	/*
-	 * check phone Input: a phone Output: true/false
+	 * to check phone. Input: a phone. Output: true/false
 	 */
 	boolean checkPhone(String phone) {
 		String re = "^(0[19])([0-9]{8,9})$";

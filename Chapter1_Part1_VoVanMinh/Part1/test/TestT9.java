@@ -1,18 +1,17 @@
 package test;
-/*
- * Test for class task9.Computer
- * Author: Vo Van Minh
- * Date: 23-08-2016
- */
 import static org.junit.Assert.*;
 import task9.Computer;
 import org.junit.Test;
 
+/*
+ * @Test for class task9.Computer
+ * @Author: Vo Van Minh
+ * @Date: 23-08-2016
+ * @Version: 1.0
+ */
 public class TestT9 {
 
-	/*
-	 * Test for calMoney() method
-	 */
+	//Test for calMoney() method
 	@Test
 	public void test() {
 		float[] price = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

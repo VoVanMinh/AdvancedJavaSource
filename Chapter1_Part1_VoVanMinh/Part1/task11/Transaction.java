@@ -1,13 +1,14 @@
 package task11;
-/* Author: Vo Van Minh
- * Date 22-08-2016
- * Version 1
- */
+
 import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/* @Transaction class
+ * @Author: Vo Van Minh
+ * @Date 22-08-2016
+ * @Version 1
+ */
 public class Transaction {
 	String id;
 	String dayTr;
@@ -69,18 +70,14 @@ public class Transaction {
 		this.rate = rate;
 	}
 
-	/*
-	 * calculate total money of a transaction
-	 */
+	//Calculate total money of a transaction.
 	float calMoney() {
 		if (transactionType.equalsIgnoreCase("sell"))
 			return (quantity * rate + (quantity * rate) * 0.001f);
 		return quantity * rate;
 	}
 
-	/*
-	 * print a transaction
-	 */
+	//print a transaction.
 	void printTrans() {
 		System.out.println("---ID: " + this.id);
 		System.out.println("---Day transaction: " + this.dayTr);
@@ -90,7 +87,8 @@ public class Transaction {
 	}
 
 	/*
-	 * get a transaction
+	 * Get a transaction.
+	 * Input: user input from keyboard.
 	 */
 	Transaction getTransaction() {
 		@SuppressWarnings("resource")
@@ -117,7 +115,9 @@ public class Transaction {
 	}
 
 	/*
-	 * check date
+	 * to check date.
+	 * Input: a string date.
+	 * Output: return true/false.
 	 */
 	boolean checkDate(String str) {
 		String re = "^(0[1-9]|[1-9]|1[0-9]|2[0-9]|3[0-1])/(0[1-9]|[1-9]|1[0-2])/(19[0-9][0-9]|[2-9][0-9][0-9][0-9])$";
