@@ -1,6 +1,5 @@
 package task31;
 
-
 /**
  * @author vovanminh
  * @version 1.0
@@ -8,14 +7,14 @@ package task31;
  */
 public abstract class Factory {
 
-	public Factory(){
+	public Factory() {
 
 	}
 
 	public void finalize() throws Throwable {
 
 	}
-	
+
 	public abstract Frock chooseFactory();
 
 }

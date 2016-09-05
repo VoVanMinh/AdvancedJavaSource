@@ -16,17 +16,17 @@ import java.io.InputStreamReader;
  */
 public class Main {
 
-    public static void main(String[] args)throws IOException{
-       
-        BufferedReader  input = new BufferedReader(new InputStreamReader(System.in));
-        ShapeFactory shapeFactory = new ShapeFactory();
-        System.out.println("Input type circle/rectangle/square: ");
-        String type = input.readLine();
-        Shape shape = shapeFactory.getShape(type);
-        if(shape == null)
-        	System.out.println("not exist");
-        else 
-        	shape.draw();
-    }
-    
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		ShapeFactory shapeFactory = new ShapeFactory();
+		System.out.println("Input type circle/rectangle/square: ");
+		String type = input.readLine();
+		Shape shape = shapeFactory.getShape(type);
+		if (shape == null)
+			System.out.println("not exist");
+		else
+			shape.draw();
+	}
+
 }

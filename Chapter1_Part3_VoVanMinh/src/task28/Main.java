@@ -1,6 +1,7 @@
 package task28;
 
 import java.util.Scanner;
+
 /**
  * @author vovanminh
  * @version 1.0
@@ -18,13 +19,17 @@ public class Main {
 		@SuppressWarnings("unused")
 		MobiObserver mobiOb = new MobiObserver(account);
 
-		System.out.println("Enter the amount you want to withdraw: ");
-		double state = input.nextDouble();
-		if (state > account.getState()) {
-			System.out.println("This amount is greater than the amount in your account.");
-		} else {
-			account.setState((account.getState() - state));
-			account.notifyAllObservers();
+		try {
+			System.out.println("Enter the amount you want to withdraw: ");
+			double state = input.nextDouble();
+			if (state > account.getState()) {
+				System.out.println("This amount is greater than the amount in your account.");
+			} else {
+				account.setState((account.getState() - state));
+				account.notifyAllObservers();
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 
 	}

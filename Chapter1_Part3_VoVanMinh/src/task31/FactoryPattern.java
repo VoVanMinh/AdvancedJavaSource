@@ -16,8 +16,7 @@ public class FactoryPattern {
 	}
 
 	/**
-	 * to get a factory from a chosen int type.
-	 * return a factory.
+	 * to get a factory from a chosen int type. return a factory.
 	 * 
 	 */
 	public Factory getFactory(int type) {

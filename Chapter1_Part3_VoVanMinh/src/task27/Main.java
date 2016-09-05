@@ -1,6 +1,7 @@
 package task27;
 
 import java.util.Scanner;
+
 /**
  * @author vovanminh
  * @version 1.0
@@ -16,9 +17,9 @@ public class Main {
 			System.out.println(e.getMessage());
 		}
 	}
+
 	/*
-	 * to print menu of program
-	 * return a int type.
+	 * to print menu of program return a int type.
 	 */
 	private static int menu() {
 		@SuppressWarnings("resource")
@@ -33,9 +34,9 @@ public class Main {
 		}
 		return temp;
 	}
+
 	/*
-	 * to print decoration menu.
-	 * return a chosen int type.
+	 * to print decoration menu. return a chosen int type.
 	 */
 	private static int decorationMenu() {
 		@SuppressWarnings("resource")
@@ -50,9 +51,9 @@ public class Main {
 		}
 		return temp;
 	}
+
 	/*
-	 * to get a Shape from a chosen.
-	 * return a shape.
+	 * to get a Shape from a chosen. return a shape.
 	 */
 	private static IShape chooseShape() {
 		switch (menu()) {
@@ -65,9 +66,9 @@ public class Main {
 		}
 		return null;
 	}
+
 	/*
-	 * to execute program.
-	 * return a string.
+	 * to execute program. return a string.
 	 */
 	private static String drawShape() {
 		String temp = " ";
