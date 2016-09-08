@@ -54,7 +54,6 @@ public class Main {
 			temp = input.nextInt();
 		}
 		return temp;
-
 	}
 
 }
