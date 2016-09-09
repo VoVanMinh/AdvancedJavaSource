@@ -13,6 +13,8 @@ import java.util.List;
 public class EmployeeManager {
 	List<Employee> list = new ArrayList<>();
 
+	//TreeSet<Employee> treeSet = new TreeSet<>(Comparator.comparing(Employee::getSalary));
+	
 	//to add a Employee into list.
 	public void addEmployee() throws IOException{
 		Employee emp = Employee.getEmployee();
@@ -22,6 +24,9 @@ public class EmployeeManager {
 
 	//to print Employee List.
 	public void printEmployeeList() {
+		//Collections.sort(list, (Employee e1, Employee e2) -> e1.getName().compareTo(e2.getName()));
+		//Collections.sort(list, (Employee e1, Employee e2) -> Double.compare(e1.getSalary(), e2.getSalary()));
+		
 		Collections.sort(list);
 		for (Employee emp : list) {
 			System.out.println(emp);
