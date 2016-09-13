@@ -38,7 +38,8 @@ public class Main {
 			System.out.println(e.getMessage());
 		}
 	}
-	//to print main menu and return int type.
+
+	// to print main menu and return int type.
 	public static int menu() {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
