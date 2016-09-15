@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<department>
+	<employee>
+		<id>1</id>
+		<name>minh</name>
+		<sex>nam</sex>
+		<birthday>20/04/1994</birthday>
+		<salary>5000.0</salary>
+		<address>bentre</address>
+		<department>1</department>
+	</employee>
+	<employee>
+		<id>2</id>
+		<name>nhig</name>
+		<sex>jjk</sex>
+		<birthday>jnk</birthday>
+		<salary>556.0</salary>
+		<address>jkn</address>
+		<department>2</department>
+	</employee>
+</department>
