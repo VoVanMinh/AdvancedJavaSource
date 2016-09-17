@@ -40,6 +40,12 @@ public class UserController {
 		return user;
 	}
 	
+	/**
+	 * @to insert a user to database
+	 * @param user
+	 * @throws SQLException
+	 * @throws ClassNotFoundException
+	 */
 	public void insertUser(User user) throws SQLException, ClassNotFoundException {
 		
 		Connection conn = dbconnect.connect();
